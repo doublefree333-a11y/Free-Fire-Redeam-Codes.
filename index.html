@@ -1,0 +1,1945 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zeeshan Website - Free Fire Redeem Codes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        :root {
+            --primary: #3498db;
+            --secondary: #2ecc71;
+            --danger: #e74c3c;
+            --warning: #f39c12;
+            --dark: #2c3e50;
+            --light: #ecf0f1;
+            --success: #27ae60;
+            --info: #2980b9;
+        }
+        
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        
+        body.dark-mode {
+            background-color: #1a1a1a;
+            color: #f0f0f0;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .header {
+            position: relative;
+            text-align: center;
+            padding: 20px 0;
+            margin-bottom: 30px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        .dark-mode .header {
+            border-bottom-color: #444;
+        }
+        
+        .header h1 {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+        
+        .header-controls {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 10px;
+        }
+        
+        .btn {
+            padding: 8px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .btn-primary {
+            background-color: var(--primary);
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            background-color: #2980b9;
+        }
+        
+        .btn-danger {
+            background-color: var(--danger);
+            color: white;
+        }
+        
+        .btn-danger:hover {
+            background-color: #c0392b;
+        }
+        
+        .btn-success {
+            background-color: var(--success);
+            color: white;
+        }
+        
+        .btn-success:hover {
+            background-color: #219653;
+        }
+        
+        .btn-secondary {
+            background-color: var(--secondary);
+            color: white;
+        }
+        
+        .btn-secondary:hover {
+            background-color: #27ae60;
+        }
+        
+        .title {
+            text-align: center;
+            font-size: 2rem;
+            color: var(--info);
+            margin-bottom: 30px;
+            padding: 15px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .dark-mode .title {
+            background-color: #2c2c2c;
+        }
+        
+        .controls {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        
+        .search-box {
+            flex: 1;
+            min-width: 250px;
+            position: relative;
+        }
+        
+        .search-box input {
+            width: 100%;
+            padding: 10px 40px 10px 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+        
+        .dark-mode .search-box input {
+            background-color: #333;
+            border-color: #555;
+            color: #f0f0f0;
+        }
+        
+        .search-box i {
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #777;
+        }
+        
+        .filter-sort {
+            display: flex;
+            gap: 10px;
+        }
+        
+        .filter-sort select {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background-color: white;
+        }
+        
+        .dark-mode .filter-sort select {
+            background-color: #333;
+            border-color: #555;
+            color: #f0f0f0;
+        }
+        
+        .codes-container {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .dark-mode .codes-container {
+            background-color: #2c2c2c;
+        }
+        
+        .code-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            margin-bottom: 15px;
+            background-color: #f8f9fa;
+            border-radius: 6px;
+            border-left: 4px solid var(--primary);
+            transition: transform 0.2s;
+        }
+        
+        .dark-mode .code-item {
+            background-color: #333;
+        }
+        
+        .code-item:hover {
+            transform: translateX(5px);
+        }
+        
+        .code-info {
+            flex: 1;
+        }
+        
+        .code-text {
+            font-family: monospace;
+            font-weight: bold;
+            color: var(--dark);
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+        }
+        
+        .dark-mode .code-text {
+            color: #f0f0f0;
+        }
+        
+        .code-meta {
+            display: flex;
+            gap: 15px;
+            font-size: 0.9rem;
+            color: #666;
+        }
+        
+        .dark-mode .code-meta {
+            color: #aaa;
+        }
+        
+        .code-actions {
+            display: flex;
+            gap: 10px;
+        }
+        
+        .copy-btn, .favorite-btn, .share-btn {
+            background-color: var(--secondary);
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: background-color 0.3s;
+        }
+        
+        .copy-btn:hover, .favorite-btn:hover, .share-btn:hover {
+            background-color: #27ae60;
+        }
+        
+        .favorite-btn.active {
+            background-color: var(--danger);
+        }
+        
+        .share-btn {
+            background-color: var(--info);
+        }
+        
+        .share-btn:hover {
+            background-color: #2980b9;
+        }
+        
+        .pagination {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            gap: 5px;
+        }
+        
+        .page-btn {
+            padding: 8px 12px;
+            border: 1px solid #ddd;
+            background-color: white;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        
+        .dark-mode .page-btn {
+            background-color: #333;
+            border-color: #555;
+            color: #f0f0f0;
+        }
+        
+        .page-btn.active {
+            background-color: var(--primary);
+            color: white;
+            border-color: var(--primary);
+        }
+        
+        .additional-text {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .dark-mode .additional-text {
+            background-color: #2c2c2c;
+        }
+        
+        .additional-text h3 {
+            color: var(--dark);
+            margin-bottom: 15px;
+        }
+        
+        .dark-mode .additional-text h3 {
+            color: #f0f0f0;
+        }
+        
+        .additional-text p {
+            margin-bottom: 15px;
+            line-height: 1.8;
+        }
+        
+        .text-actions {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 15px;
+        }
+        
+        .action-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .send-code-btn {
+            background-color: var(--warning);
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        
+        .send-code-btn:hover {
+            background-color: #d68910;
+        }
+        
+        .notification {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: var(--success);
+            color: white;
+            padding: 15px 20px;
+            border-radius: 4px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            opacity: 0;
+            transition: opacity 0.3s, transform 0.3s;
+            transform: translateX(100px);
+            z-index: 1000;
+            max-width: 300px;
+        }
+        
+        .notification.show {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        
+        .notification.error {
+            background-color: var(--danger);
+        }
+        
+        .notification.warning {
+            background-color: var(--warning);
+        }
+        
+        .stats-container {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        
+        .stat-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 15px;
+            text-align: center;
+            flex: 1;
+            min-width: 150px;
+        }
+        
+        .dark-mode .stat-card {
+            background-color: #2c2c2c;
+        }
+        
+        .stat-value {
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--primary);
+        }
+        
+        .stat-label {
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        .dark-mode .stat-label {
+            color: #aaa;
+        }
+        
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.5);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .modal-content {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            max-width: 500px;
+            width: 90%;
+            max-height: 80vh;
+            overflow-y: auto;
+        }
+        
+        .dark-mode .modal-content {
+            background-color: #2c2c2c;
+        }
+        
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        
+        .modal-title {
+            font-size: 1.5rem;
+            color: var(--dark);
+        }
+        
+        .dark-mode .modal-title {
+            color: #f0f0f0;
+        }
+        
+        .close-btn {
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: #666;
+        }
+        
+        .dark-mode .close-btn {
+            color: #aaa;
+        }
+        
+        .form-group {
+            margin-bottom: 15px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        
+        .form-group input, .form-group textarea, .form-group select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+        
+        .dark-mode .form-group input, 
+        .dark-mode .form-group textarea, 
+        .dark-mode .form-group select {
+            background-color: #333;
+            border-color: #555;
+            color: #f0f0f0;
+        }
+        
+        .rating {
+            display: flex;
+            gap: 5px;
+            margin-bottom: 15px;
+        }
+        
+        .star {
+            font-size: 1.5rem;
+            color: #ddd;
+            cursor: pointer;
+        }
+        
+        .star.active {
+            color: var(--warning);
+        }
+        
+        .tabs {
+            display: flex;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .dark-mode .tabs {
+            border-bottom-color: #444;
+        }
+        
+        .tab {
+            padding: 10px 15px;
+            cursor: pointer;
+            border-bottom: 2px solid transparent;
+        }
+        
+        .tab.active {
+            border-bottom-color: var(--primary);
+            color: var(--primary);
+        }
+        
+        .tab-content {
+            display: none;
+        }
+        
+        .tab-content.active {
+            display: block;
+        }
+        
+        .comment {
+            background-color: #f8f9fa;
+            border-radius: 6px;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+        
+        .dark-mode .comment {
+            background-color: #333;
+        }
+        
+        .comment-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        
+        .comment-author {
+            font-weight: bold;
+        }
+        
+        .comment-date {
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        .dark-mode .comment-date {
+            color: #aaa;
+        }
+        
+        .code-history {
+            max-height: 200px;
+            overflow-y: auto;
+            margin-top: 15px;
+        }
+        
+        .history-item {
+            padding: 8px;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .dark-mode .history-item {
+            border-bottom-color: #444;
+        }
+        
+        .history-code {
+            font-family: monospace;
+            font-weight: bold;
+        }
+        
+        .history-time {
+            color: #666;
+            font-size: 0.8rem;
+        }
+        
+        .dark-mode .history-time {
+            color: #aaa;
+        }
+        
+        .countdown {
+            font-weight: bold;
+            color: var(--danger);
+        }
+        
+        .tooltip {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 120px;
+            background-color: #555;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%;
+            left: 50%;
+            margin-left: -60px;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+            opacity: 1;
+        }
+        
+        .loading {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid rgba(255,255,255,.3);
+            border-radius: 50%;
+            border-top-color: #fff;
+            animation: spin 1s ease-in-out infinite;
+        }
+        
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+        
+        .export-import {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .file-input {
+            display: none;
+        }
+        
+        .progress-bar {
+            height: 5px;
+            background-color: #eee;
+            border-radius: 3px;
+            overflow: hidden;
+            margin-bottom: 15px;
+        }
+        
+        .dark-mode .progress-bar {
+            background-color: #444;
+        }
+        
+        .progress {
+            height: 100%;
+            background-color: var(--primary);
+            width: 0%;
+            transition: width 0.3s;
+        }
+        
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .title {
+                font-size: 1.5rem;
+            }
+            
+            .code-item {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .code-actions {
+                margin-top: 10px;
+                width: 100%;
+                justify-content: space-between;
+            }
+            
+            .controls {
+                flex-direction: column;
+            }
+            
+            .filter-sort {
+                width: 100%;
+                justify-content: space-between;
+            }
+            
+            .stats-container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Zeeshan Website</h1>
+            <div class="header-controls">
+                <button class="btn btn-primary" id="darkModeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="btn btn-danger" onclick="showReport()">
+                    <i class="fas fa-flag"></i> Report
+                </button>
+            </div>
+        </div>
+        
+        <div class="title">
+            Free Fire Redeem Codes
+        </div>
+        
+        <div class="stats-container">
+            <div class="stat-card">
+                <div class="stat-value" id="totalCodes">50</div>
+                <div class="stat-label">Total Codes</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="activeCodes">42</div>
+                <div class="stat-label">Active Codes</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="expiredCodes">8</div>
+                <div class="stat-label">Expired Codes</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="favoriteCount">0</div>
+                <div class="stat-label">Favorites</div>
+            </div>
+        </div>
+        
+        <div class="controls">
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Search codes...">
+                <i class="fas fa-search"></i>
+            </div>
+            <div class="filter-sort">
+                <select id="statusFilter">
+                    <option value="all">All Status</option>
+                    <option value="active">Active</option>
+                    <option value="expired">Expired</option>
+                </select>
+                <select id="sortBy">
+                    <option value="newest">Newest First</option>
+                    <option value="oldest">Oldest First</option>
+                    <option value="alphabetical">Alphabetical</option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="export-import">
+            <button class="btn btn-secondary" onclick="exportCodes()">
+                <i class="fas fa-download"></i> Export CSV
+            </button>
+            <label for="importFile" class="btn btn-secondary">
+                <i class="fas fa-upload"></i> Import CSV
+            </label>
+            <input type="file" id="importFile" class="file-input" accept=".csv" onchange="importCodes(event)">
+        </div>
+        
+        <div class="progress-bar">
+            <div class="progress" id="progressBar"></div>
+        </div>
+        
+        <div class="codes-container">
+            <div id="codes-list">
+                <!-- Codes will be generated by JavaScript -->
+            </div>
+            <div class="pagination" id="pagination">
+                <!-- Pagination will be generated by JavaScript -->
+            </div>
+        </div>
+        
+        <div class="additional-text">
+            <h3>How to Redeem Free Fire Codes</h3>
+            <p>Redeeming Free Fire codes is a simple process that can get you exciting in-game rewards. Follow these steps to redeem your codes:</p>
+            <p>1. Visit the official Free Fire redemption website: https://reward.ff.garena.com/en</p>
+            <p>2. Log in with your Free Fire account (Facebook, Google, Twitter, Apple ID, etc.)</p>
+            <p>3. Enter the redemption code in the text field</p>
+            <p>4. Click "Confirm" to redeem your rewards</p>
+            <p>5. Check your in-game mail to collect your rewards</p>
+            <p>Note: Each code can only be used once per account and has an expiration date. Make sure to redeem them as soon as possible!</p>
+            
+            <div class="text-actions">
+                <button class="btn btn-primary" onclick="copyAdditionalText()">
+                    <i class="fas fa-copy"></i> Copy Text
+                </button>
+                <button class="btn btn-secondary" onclick="printPage()">
+                    <i class="fas fa-print"></i> Print
+                </button>
+            </div>
+        </div>
+        
+        <div class="action-buttons">
+            <button class="btn btn-primary" onclick="showCodeHistory()">
+                <i class="fas fa-history"></i> Code History
+            </button>
+            <button class="btn btn-secondary" onclick="showAddCodeModal()">
+                <i class="fas fa-plus"></i> Add Code
+            </button>
+            <button class="send-code-btn" onclick="sendCode()">
+                <i class="fas fa-paper-plane"></i> Send Code
+            </button>
+        </div>
+    </div>
+    
+    <div class="notification" id="notification"></div>
+    
+    <!-- Report Modal -->
+    <div class="modal" id="reportModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">Report an Issue</h2>
+                <button class="close-btn" onclick="closeModal('reportModal')">&times;</button>
+            </div>
+            <form id="reportForm">
+                <div class="form-group">
+                    <label for="reportType">Issue Type</label>
+                    <select id="reportType">
+                        <option value="broken">Broken Code</option>
+                        <option value="expired">Expired Code</option>
+                        <option value="duplicate">Duplicate Code</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="reportCode">Code (if applicable)</label>
+                    <input type="text" id="reportCode" placeholder="Enter the code you're reporting">
+                </div>
+                <div class="form-group">
+                    <label for="reportMessage">Description</label>
+                    <textarea id="reportMessage" rows="4" placeholder="Describe the issue..."></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="reportEmail">Your Email (optional)</label>
+                    <input type="email" id="reportEmail" placeholder="your@email.com">
+                </div>
+                <button type="submit" class="btn btn-danger">Submit Report</button>
+            </form>
+        </div>
+    </div>
+    
+    <!-- Code Details Modal -->
+    <div class="modal" id="codeDetailsModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">Code Details</h2>
+                <button class="close-btn" onclick="closeModal('codeDetailsModal')">&times;</button>
+            </div>
+            <div id="codeDetailsContent">
+                <!-- Code details will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+    
+    <!-- Add Code Modal -->
+    <div class="modal" id="addCodeModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">Add New Code</h2>
+                <button class="close-btn" onclick="closeModal('addCodeModal')">&times;</button>
+            </div>
+            <form id="addCodeForm">
+                <div class="form-group">
+                    <label for="newCode">Code</label>
+                    <input type="text" id="newCode" placeholder="Enter the code" required>
+                </div>
+                <div class="form-group">
+                    <label for="newCodeReward">Reward Description</label>
+                    <input type="text" id="newCodeReward" placeholder="e.g., 100 Diamonds, Weapon Royale Card">
+                </div>
+                <div class="form-group">
+                    <label for="newCodeCategory">Category</label>
+                    <select id="newCodeCategory">
+                        <option value="diamonds">Diamonds</option>
+                        <option value="weapons">Weapons</option>
+                        <option value="characters">Characters</option>
+                        <option value="skins">Skins</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="newCodeSource">Source</label>
+                    <input type="text" id="newCodeSource" placeholder="e.g., Official Facebook, YouTube">
+                </div>
+                <div class="form-group">
+                    <label for="newCodeExpiry">Expiry Date</label>
+                    <input type="date" id="newCodeExpiry">
+                </div>
+                <button type="submit" class="btn btn-primary">Add Code</button>
+            </form>
+        </div>
+    </div>
+    
+    <!-- Code History Modal -->
+    <div class="modal" id="codeHistoryModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">Code History</h2>
+                <button class="close-btn" onclick="closeModal('codeHistoryModal')">&times;</button>
+            </div>
+            <div class="code-history" id="codeHistoryContent">
+                <!-- Code history will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+    
+    <!-- Settings Modal -->
+    <div class="modal" id="settingsModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">Settings</h2>
+                <button class="close-btn" onclick="closeModal('settingsModal')">&times;</button>
+            </div>
+            <div class="tabs">
+                <div class="tab active" onclick="switchTab('general')">General</div>
+                <div class="tab" onclick="switchTab('notifications')">Notifications</div>
+                <div class="tab" onclick="switchTab('account')">Account</div>
+            </div>
+            <div class="tab-content active" id="general-tab">
+                <div class="form-group">
+                    <label>Language</label>
+                    <select id="languageSelect">
+                        <option value="en">English</option>
+                        <option value="ur">Urdu</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Theme</label>
+                    <select id="themeSelect">
+                        <option value="light">Light</option>
+                        <option value="dark">Dark</option>
+                        <option value="auto">Auto</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Items per page</label>
+                    <select id="itemsPerPage">
+                        <option value="10">10</option>
+                        <option value="20">20</option>
+                        <option value="50">50</option>
+                    </select>
+                </div>
+            </div>
+            <div class="tab-content" id="notifications-tab">
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" id="newCodeNotifications" checked> Notify me about new codes
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" id="expiryNotifications" checked> Notify me before codes expire
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label>Notification time before expiry</label>
+                    <select id="notificationTime">
+                        <option value="1">1 hour</option>
+                        <option value="6">6 hours</option>
+                        <option value="24" selected>24 hours</option>
+                        <option value="48">48 hours</option>
+                    </select>
+                </div>
+            </div>
+            <div class="tab-content" id="account-tab">
+                <div class="form-group">
+                    <label>Username</label>
+                    <input type="text" id="username" placeholder="Enter your username">
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" id="password" placeholder="Enter your password">
+                </div>
+                <button class="btn btn-primary">Save Changes</button>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // Generate 50 Free Fire redeem codes with additional data
+        const rewards = [
+            "100 Diamonds", "Weapon Royale Card", "Character Voucher", "Incubator Voucher", 
+            "Diamond Royale Voucher", "Magic Cube Fragment", "Upgraded Weapon Voucher", 
+            "Gold Royale Voucher", "Pet Food", "Parachute", "Avatar", "Emote", 
+            "Loot Crate", "Elite Pass Voucher", "Grenade", "Med Kit", "Ammo", 
+            "Armor", "Helmet", "Backpack", "Shoes", "Pants", "Jacket", "Mask", 
+            "Hat", "Gloves", "Scar", "Tattoo", "Banner", "Name Change Card", 
+            "Room Card", "Practice Token", "Frag Grenade", "Smoke Grenade", 
+            "Flashbang", "Landmine", "Gloo Wall", "Health Pack", "Ammo Pack", 
+            "Weapon Token", "Character Token", "Pet Token", "Skin Token", 
+            "Bundle Token", "Event Token", "Special Token", "Rare Token"
+        ];
+        
+        const categories = ["diamonds", "weapons", "characters", "skins", "other"];
+        const sources = ["Official Facebook", "Official Instagram", "Official YouTube", "Official Discord", "Official Twitter", "Official Website", "Partner Event", "Tournament", "Live Stream", "Giveaway"];
+        
+        let codes = [];
+        let filteredCodes = [];
+        let currentPage = 1;
+        const itemsPerPage = 10;
+        let favorites = JSON.parse(localStorage.getItem('favorites')) || [];
+        let codeHistory = JSON.parse(localStorage.getItem('codeHistory')) || [];
+        let darkMode = localStorage.getItem('darkMode') === 'true';
+        
+        // Initialize the page
+        document.addEventListener('DOMContentLoaded', function() {
+            generateCodes();
+            applyDarkMode();
+            renderCodes();
+            updateStats();
+            setupEventListeners();
+            checkForNewCodes();
+            startAutoRefresh();
+            setupKeyboardShortcuts();
+        });
+        
+        // Generate initial codes
+        function generateCodes() {
+            const baseCodes = [
+                "FF9M2GF1MBBN", "FF9MJ31CXKRG", "FF10617KGUF9", "FF10BA7BC5L9", "FF10TD3CD4TQ",
+                "FF11HFNC3K9B", "FF11NJN5YS3E", "FF119MB3PFA5", "FF11HHGCGH3R", "FF11K3B6QRC9",
+                "FF11NPPV2D3B", "FF11R1AC4RCU", "FF11WFN3MA5X", "FF11XMKH6GHM", "FF12F2T5Y4Q6",
+                "FF12GGEH4R23", "FF12J3C66L9D", "FF12K3B6QRC9", "FF12M2GH1ZQ2", "FF12N3K6H2R9",
+                "FF12R5F77T8M", "FF12T1G3X4Z2", "FF12TF3H6Q9R", "FF12V2G5F8R3", "FF12X2Z5D8R2",
+                "FF13B3C66L9D", "FF13F2T5Y4Q6", "FF13GGEH4R23", "FF13J3C66L9D", "FF13K3B6QRC9",
+                "FF13M2GH1ZQ2", "FF13N3K6H2R9", "FF13R5F77T8M", "FF13T1G3X4Z2", "FF13TF3H6Q9R",
+                "FF13V2G5F8R3", "FF13X2Z5D8R2", "FF14B3C66L9D", "FF14F2T5Y4Q6", "FF14GGEH4R23",
+                "FF14J3C66L9D", "FF14K3B6QRC9", "FF14M2GH1ZQ2", "FF14N3K6H2R9", "FF14R5F77T8M",
+                "FF14T1G3X4Z2", "FF14TF3H6Q9R", "FF14V2G5F8R3", "FF14X2Z5D8R2", "FF15B3C66L9D"
+            ];
+            
+            // Generate codes with additional data
+            for (let i = 0; i < baseCodes.length; i++) {
+                const daysToExpiry = Math.floor(Math.random() * 30) + 1;
+                const expiryDate = new Date();
+                expiryDate.setDate(expiryDate.getDate() + daysToExpiry);
+                
+                codes.push({
+                    id: i + 1,
+                    code: baseCodes[i],
+                    reward: rewards[Math.floor(Math.random() * rewards.length)],
+                    category: categories[Math.floor(Math.random() * categories.length)],
+                    source: sources[Math.floor(Math.random() * sources.length)],
+                    expiryDate: expiryDate,
+                    addedDate: new Date(Date.now() - Math.floor(Math.random() * 30) * 24 * 60 * 60 * 1000),
+                    status: daysToExpiry > 0 ? 'active' : 'expired',
+                    redeemed: false,
+                    rating: Math.floor(Math.random() * 5) + 1,
+                    likes: Math.floor(Math.random() * 100),
+                    dislikes: Math.floor(Math.random() * 20)
+                });
+            }
+            
+            // Make some codes expired
+            for (let i = 0; i < 8; i++) {
+                const randomIndex = Math.floor(Math.random() * codes.length);
+                codes[randomIndex].status = 'expired';
+                const pastDate = new Date();
+                pastDate.setDate(pastDate.getDate() - Math.floor(Math.random() * 10) - 1);
+                codes[randomIndex].expiryDate = pastDate;
+            }
+            
+            filteredCodes = [...codes];
+        }
+        
+        // Apply dark mode
+        function applyDarkMode() {
+            if (darkMode) {
+                document.body.classList.add('dark-mode');
+                document.getElementById('darkModeToggle').innerHTML = '<i class="fas fa-sun"></i>';
+            } else {
+                document.body.classList.remove('dark-mode');
+                document.getElementById('darkModeToggle').innerHTML = '<i class="fas fa-moon"></i>';
+            }
+        }
+        
+        // Toggle dark mode
+        document.getElementById('darkModeToggle').addEventListener('click', function() {
+            darkMode = !darkMode;
+            localStorage.setItem('darkMode', darkMode);
+            applyDarkMode();
+        });
+        
+        // Setup event listeners
+        function setupEventListeners() {
+            // Search functionality
+            document.getElementById('searchInput').addEventListener('input', function() {
+                filterCodes();
+            });
+            
+            // Status filter
+            document.getElementById('statusFilter').addEventListener('change', function() {
+                filterCodes();
+            });
+            
+            // Sort functionality
+            document.getElementById('sortBy').addEventListener('change', function() {
+                sortCodes();
+            });
+            
+            // Report form submission
+            document.getElementById('reportForm').addEventListener('submit', function(e) {
+                e.preventDefault();
+                submitReport();
+            });
+            
+            // Add code form submission
+            document.getElementById('addCodeForm').addEventListener('submit', function(e) {
+                e.preventDefault();
+                addNewCode();
+            });
+            
+            // Settings form changes
+            document.getElementById('languageSelect').addEventListener('change', function() {
+                showNotification('Language changed to ' + this.options[this.selectedIndex].text);
+            });
+            
+            document.getElementById('themeSelect').addEventListener('change', function() {
+                if (this.value === 'dark') {
+                    darkMode = true;
+                } else if (this.value === 'light') {
+                    darkMode = false;
+                } else {
+                    // Auto theme based on system preference
+                    darkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+                }
+                localStorage.setItem('darkMode', darkMode);
+                applyDarkMode();
+                showNotification('Theme changed to ' + this.options[this.selectedIndex].text);
+            });
+            
+            document.getElementById('itemsPerPage').addEventListener('change', function() {
+                itemsPerPage = parseInt(this.value);
+                currentPage = 1;
+                renderCodes();
+                renderPagination();
+            });
+        }
+        
+        // Filter codes based on search and status
+        function filterCodes() {
+            const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+            const statusFilter = document.getElementById('statusFilter').value;
+            
+            filteredCodes = codes.filter(code => {
+                const matchesSearch = code.code.toLowerCase().includes(searchTerm) || 
+                                    code.reward.toLowerCase().includes(searchTerm) ||
+                                    code.category.toLowerCase().includes(searchTerm) ||
+                                    code.source.toLowerCase().includes(searchTerm);
+                
+                const matchesStatus = statusFilter === 'all' || code.status === statusFilter;
+                
+                return matchesSearch && matchesStatus;
+            });
+            
+            currentPage = 1;
+            renderCodes();
+            renderPagination();
+        }
+        
+        // Sort codes
+        function sortCodes() {
+            const sortBy = document.getElementById('sortBy').value;
+            
+            switch(sortBy) {
+                case 'newest':
+                    filteredCodes.sort((a, b) => b.addedDate - a.addedDate);
+                    break;
+                case 'oldest':
+                    filteredCodes.sort((a, b) => a.addedDate - b.addedDate);
+                    break;
+                case 'alphabetical':
+                    filteredCodes.sort((a, b) => a.code.localeCompare(b.code));
+                    break;
+            }
+            
+            renderCodes();
+        }
+        
+        // Render codes
+        function renderCodes() {
+            const codesList = document.getElementById('codes-list');
+            codesList.innerHTML = '';
+            
+            const startIndex = (currentPage - 1) * itemsPerPage;
+            const endIndex = Math.min(startIndex + itemsPerPage, filteredCodes.length);
+            
+            if (filteredCodes.length === 0) {
+                codesList.innerHTML = '<p style="text-align: center; padding: 20px;">No codes found matching your criteria.</p>';
+                return;
+            }
+            
+            for (let i = startIndex; i < endIndex; i++) {
+                const code = filteredCodes[i];
+                const codeItem = document.createElement('div');
+                codeItem.className = 'code-item';
+                
+                const isFavorite = favorites.includes(code.code);
+                const timeUntilExpiry = getTimeUntilExpiry(code.expiryDate);
+                
+                codeItem.innerHTML = `
+                    <div class="code-info">
+                        <div class="code-text">${code.code}</div>
+                        <div class="code-meta">
+                            <span><i class="fas fa-gift"></i> ${code.reward}</span>
+                            <span><i class="fas fa-tag"></i> ${code.category}</span>
+                            <span><i class="fas fa-clock"></i> ${timeUntilExpiry}</span>
+                            <span><i class="fas fa-star"></i> ${code.rating}/5</span>
+                        </div>
+                    </div>
+                    <div class="code-actions">
+                        <button class="copy-btn" onclick="copyToClipboard('${code.code}', this)">
+                            <i class="fas fa-copy"></i> Copy
+                        </button>
+                        <button class="favorite-btn ${isFavorite ? 'active' : ''}" onclick="toggleFavorite('${code.code}', this)">
+                            <i class="fas fa-heart"></i>
+                        </button>
+                        <button class="share-btn tooltip" onclick="shareCode('${code.code}')">
+                            <i class="fas fa-share-alt"></i>
+                            <span class="tooltiptext">Share</span>
+                        </button>
+                        <button class="btn btn-primary" onclick="showCodeDetails(${code.id})">
+                            <i class="fas fa-info-circle"></i>
+                        </button>
+                    </div>
+                `;
+                
+                codesList.appendChild(codeItem);
+            }
+            
+            renderPagination();
+        }
+        
+        // Render pagination
+        function renderPagination() {
+            const pagination = document.getElementById('pagination');
+            pagination.innerHTML = '';
+            
+            const totalPages = Math.ceil(filteredCodes.length / itemsPerPage);
+            
+            if (totalPages <= 1) return;
+            
+            // Previous button
+            const prevBtn = document.createElement('button');
+            prevBtn.className = 'page-btn';
+            prevBtn.textContent = 'Previous';
+            prevBtn.disabled = currentPage === 1;
+            prevBtn.onclick = function() {
+                if (currentPage > 1) {
+                    currentPage--;
+                    renderCodes();
+                }
+            };
+            pagination.appendChild(prevBtn);
+            
+            // Page numbers
+            for (let i = 1; i <= totalPages; i++) {
+                if (i === 1 || i === totalPages || (i >= currentPage - 1 && i <= currentPage + 1)) {
+                    const pageBtn = document.createElement('button');
+                    pageBtn.className = 'page-btn';
+                    if (i === currentPage) {
+                        pageBtn.classList.add('active');
+                    }
+                    pageBtn.textContent = i;
+                    pageBtn.onclick = function() {
+                        currentPage = i;
+                        renderCodes();
+                    };
+                    pagination.appendChild(pageBtn);
+                } else if (i === currentPage - 2 || i === currentPage + 2) {
+                    const dots = document.createElement('span');
+                    dots.textContent = '...';
+                    dots.style.padding = '0 5px';
+                    pagination.appendChild(dots);
+                }
+            }
+            
+            // Next button
+            const nextBtn = document.createElement('button');
+            nextBtn.className = 'page-btn';
+            nextBtn.textContent = 'Next';
+            nextBtn.disabled = currentPage === totalPages;
+            nextBtn.onclick = function() {
+                if (currentPage < totalPages) {
+                    currentPage++;
+                    renderCodes();
+                }
+            };
+            pagination.appendChild(nextBtn);
+        }
+        
+        // Copy code to clipboard
+        function copyToClipboard(text, button) {
+            navigator.clipboard.writeText(text).then(() => {
+                // Update button text
+                const originalHTML = button.innerHTML;
+                button.innerHTML = '<i class="fas fa-check"></i> Copied!';
+                button.disabled = true;
+                
+                // Add to history
+                addToHistory(text);
+                
+                // Show notification
+                showNotification(`Code "${text}" copied to clipboard!`);
+                
+                // Reset button after 2 seconds
+                setTimeout(() => {
+                    button.innerHTML = originalHTML;
+                    button.disabled = false;
+                }, 2000);
+            }).catch(err => {
+                console.error('Failed to copy: ', err);
+                showNotification('Failed to copy code. Please try again.', 'error');
+            });
+        }
+        
+        // Toggle favorite
+        function toggleFavorite(code, button) {
+            const index = favorites.indexOf(code);
+            
+            if (index === -1) {
+                favorites.push(code);
+                button.classList.add('active');
+                showNotification(`Code "${code}" added to favorites!`);
+            } else {
+                favorites.splice(index, 1);
+                button.classList.remove('active');
+                showNotification(`Code "${code}" removed from favorites!`);
+            }
+            
+            localStorage.setItem('favorites', JSON.stringify(favorites));
+            updateStats();
+        }
+        
+        // Share code
+        function shareCode(code) {
+            if (navigator.share) {
+                navigator.share({
+                    title: 'Free Fire Redeem Code',
+                    text: `Check out this Free Fire redeem code: ${code}`,
+                    url: window.location.href
+                })
+                .then(() => showNotification('Code shared successfully!'))
+                .catch((error) => console.log('Error sharing:', error));
+            } else {
+                // Fallback for browsers that don't support the Web Share API
+                copyToClipboard(code, event.target);
+                showNotification('Code copied to clipboard for sharing!');
+            }
+        }
+        
+        // Show code details
+        function showCodeDetails(codeId) {
+            const code = codes.find(c => c.id === codeId);
+            if (!code) return;
+            
+            const modal = document.getElementById('codeDetailsModal');
+            const content = document.getElementById('codeDetailsContent');
+            
+            const timeUntilExpiry = getTimeUntilExpiry(code.expiryDate);
+            const daysSinceAdded = Math.floor((new Date() - code.addedDate) / (1000 * 60 * 60 * 24));
+            
+            content.innerHTML = `
+                <div class="form-group">
+                    <label>Code</label>
+                    <div style="display: flex; gap: 10px; align-items: center;">
+                        <input type="text" value="${code.code}" readonly style="flex: 1;">
+                        <button class="btn btn-secondary" onclick="copyToClipboard('${code.code}', this)">
+                            <i class="fas fa-copy"></i> Copy
+                        </button>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Reward</label>
+                    <input type="text" value="${code.reward}" readonly>
+                </div>
+                <div class="form-group">
+                    <label>Category</label>
+                    <input type="text" value="${code.category}" readonly>
+                </div>
+                <div class="form-group">
+                    <label>Source</label>
+                    <input type="text" value="${code.source}" readonly>
+                </div>
+                <div class="form-group">
+                    <label>Status</label>
+                    <input type="text" value="${code.status === 'active' ? 'Active' : 'Expired'}" readonly>
+                </div>
+                <div class="form-group">
+                    <label>Time Until Expiry</label>
+                    <input type="text" value="${timeUntilExpiry}" readonly>
+                </div>
+                <div class="form-group">
+                    <label>Added</label>
+                    <input type="text" value="${daysSinceAdded} days ago" readonly>
+                </div>
+                <div class="form-group">
+                    <label>Rating</label>
+                    <div class="rating">
+                        ${generateStars(code.rating)}
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Feedback</label>
+                    <div style="display: flex; gap: 15px;">
+                        <button class="btn btn-success" onclick="likeCode(${code.id})">
+                            <i class="fas fa-thumbs-up"></i> ${code.likes}
+                        </button>
+                        <button class="btn btn-danger" onclick="dislikeCode(${code.id})">
+                            <i class="fas fa-thumbs-down"></i> ${code.dislikes}
+                        </button>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Comments</label>
+                    <div id="comments-${code.id}">
+                        ${generateComments(code.id)}
+                    </div>
+                    <div style="margin-top: 10px;">
+                        <input type="text" id="new-comment-${code.id}" placeholder="Add a comment..." style="width: 70%; display: inline-block;">
+                        <button class="btn btn-primary" onclick="addComment(${code.id})">Post</button>
+                    </div>
+                </div>
+            `;
+            
+            modal.style.display = 'flex';
+        }
+        
+        // Generate star rating
+        function generateStars(rating) {
+            let stars = '';
+            for (let i = 1; i <= 5; i++) {
+                if (i <= rating) {
+                    stars += `<i class="fas fa-star star active" onclick="rateCode(${rating}, ${i})"></i>`;
+                } else {
+                    stars += `<i class="fas fa-star star" onclick="rateCode(${rating}, ${i})"></i>`;
+                }
+            }
+            return stars;
+        }
+        
+        // Generate comments
+        function generateComments(codeId) {
+            // In a real app, this would fetch from a database
+            const comments = [
+                { author: "Player1", text: "This code worked perfectly!", date: "2 days ago" },
+                { author: "Gamer123", text: "Thanks for sharing!", date: "1 day ago" },
+                { author: "FreeFireFan", text: "Redeemed successfully.", date: "5 hours ago" }
+            ];
+            
+            let commentsHtml = '';
+            comments.forEach(comment => {
+                commentsHtml += `
+                    <div class="comment">
+                        <div class="comment-header">
+                            <span class="comment-author">${comment.author}</span>
+                            <span class="comment-date">${comment.date}</span>
+                        </div>
+                        <div>${comment.text}</div>
+                    </div>
+                `;
+            });
+            
+            return commentsHtml;
+        }
+        
+        // Add comment
+        function addComment(codeId) {
+            const input = document.getElementById(`new-comment-${codeId}`);
+            const commentText = input.value.trim();
+            
+            if (!commentText) return;
+            
+            // In a real app, this would save to a database
+            const newComment = document.createElement('div');
+            newComment.className = 'comment';
+            newComment.innerHTML = `
+                <div class="comment-header">
+                    <span class="comment-author">You</span>
+                    <span class="comment-date">Just now</span>
+                </div>
+                <div>${commentText}</div>
+            `;
+            
+            const commentsContainer = document.getElementById(`comments-${codeId}`);
+            commentsContainer.insertBefore(newComment, commentsContainer.firstChild);
+            
+            input.value = '';
+            showNotification('Comment added successfully!');
+        }
+        
+        // Rate code
+        function rateCode(currentRating, newRating) {
+            showNotification(`You rated this code ${newRating} stars!`);
+            // In a real app, this would save to a database
+        }
+        
+        // Like code
+        function likeCode(codeId) {
+            const code = codes.find(c => c.id === codeId);
+            if (code) {
+                code.likes++;
+                showNotification('You liked this code!');
+                showCodeDetails(codeId); // Refresh the modal
+            }
+        }
+        
+        // Dislike code
+        function dislikeCode(codeId) {
+            const code = codes.find(c => c.id === codeId);
+            if (code) {
+                code.dislikes++;
+                showNotification('You disliked this code!');
+                showCodeDetails(codeId); // Refresh the modal
+            }
+        }
+        
+        // Get time until expiry
+        function getTimeUntilExpiry(expiryDate) {
+            const now = new Date();
+            const diff = expiryDate - now;
+            
+            if (diff <= 0) {
+                return 'Expired';
+            }
+            
+            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            
+            if (days > 0) {
+                return `${days} day${days !== 1 ? 's' : ''} left`;
+            } else {
+                return `${hours} hour${hours !== 1 ? 's' : ''} left`;
+            }
+        }
+        
+        // Show notification
+        function showNotification(message, type = 'success') {
+            const notification = document.getElementById('notification');
+            notification.textContent = message;
+            notification.className = 'notification show';
+            
+            if (type === 'error') {
+                notification.classList.add('error');
+            } else if (type === 'warning') {
+                notification.classList.add('warning');
+            }
+            
+            setTimeout(() => {
+                notification.classList.remove('show');
+            }, 3000);
+        }
+        
+        // Show report modal
+        function showReport() {
+            document.getElementById('reportModal').style.display = 'flex';
+        }
+        
+        // Submit report
+        function submitReport() {
+            const reportType = document.getElementById('reportType').value;
+            const reportCode = document.getElementById('reportCode').value;
+            const reportMessage = document.getElementById('reportMessage').value;
+            
+            if (!reportMessage.trim()) {
+                showNotification('Please provide a description for your report.', 'error');
+                return;
+            }
+            
+            // In a real app, this would send the report to a server
+            showNotification('Report submitted successfully! We will review it shortly.');
+            closeModal('reportModal');
+            
+            // Reset form
+            document.getElementById('reportForm').reset();
+        }
+        
+        // Show add code modal
+        function showAddCodeModal() {
+            document.getElementById('addCodeModal').style.display = 'flex';
+        }
+        
+        // Add new code
+        function addNewCode() {
+            const code = document.getElementById('newCode').value.trim();
+            const reward = document.getElementById('newCodeReward').value.trim();
+            const category = document.getElementById('newCodeCategory').value;
+            const source = document.getElementById('newCodeSource').value.trim();
+            const expiryDate = document.getElementById('newCodeExpiry').value;
+            
+            if (!code) {
+                showNotification('Please enter a code.', 'error');
+                return;
+            }
+            
+            // Check if code already exists
+            if (codes.some(c => c.code === code)) {
+                showNotification('This code already exists.', 'error');
+                return;
+            }
+            
+            // Create new code object
+            const newCode = {
+                id: codes.length + 1,
+                code: code,
+                reward: reward || 'Unknown reward',
+                category: category,
+                source: source || 'User submitted',
+                expiryDate: expiryDate ? new Date(expiryDate) : new Date(Date.now() + 7 * 24 * 60 * 60 * 1000), // Default to 7 days
+                addedDate: new Date(),
+                status: 'active',
+                redeemed: false,
+                rating: 0,
+                likes: 0,
+                dislikes: 0
+            };
+            
+            // Add to codes array
+            codes.unshift(newCode);
+            filteredCodes = [...codes];
+            
+            // Re-render codes
+            renderCodes();
+            updateStats();
+            
+            // Show success message
+            showNotification('New code added successfully!');
+            closeModal('addCodeModal');
+            
+            // Reset form
+            document.getElementById('addCodeForm').reset();
+        }
+        
+        // Show code history
+        function showCodeHistory() {
+            const modal = document.getElementById('codeHistoryModal');
+            const content = document.getElementById('codeHistoryContent');
+            
+            if (codeHistory.length === 0) {
+                content.innerHTML = '<p style="text-align: center; padding: 20px;">No code history yet. Copy some codes to see them here.</p>';
+            } else {
+                content.innerHTML = '';
+                codeHistory.forEach(item => {
+                    const historyItem = document.createElement('div');
+                    historyItem.className = 'history-item';
+                    historyItem.innerHTML = `
+                        <span class="history-code">${item.code}</span>
+                        <span class="history-time">${formatDate(item.timestamp)}</span>
+                    `;
+                    content.appendChild(historyItem);
+                });
+            }
+            
+            modal.style.display = 'flex';
+        }
+        
+        // Add to history
+        function addToHistory(code) {
+            // Add to beginning of array
+            codeHistory.unshift({
+                code: code,
+                timestamp: new Date()
+            });
+            
+            // Keep only last 20 items
+            if (codeHistory.length > 20) {
+                codeHistory = codeHistory.slice(0, 20);
+            }
+            
+            // Save to localStorage
+            localStorage.setItem('codeHistory', JSON.stringify(codeHistory));
+        }
+        
+        // Format date
+        function formatDate(date) {
+            const now = new Date();
+            const diff = now - new Date(date);
+            
+            const seconds = Math.floor(diff / 1000);
+            const minutes = Math.floor(seconds / 60);
+            const hours = Math.floor(minutes / 60);
+            const days = Math.floor(hours / 24);
+            
+            if (days > 0) {
+                return `${days} day${days !== 1 ? 's' : ''} ago`;
+            } else if (hours > 0) {
+                return `${hours} hour${hours !== 1 ? 's' : ''} ago`;
+            } else if (minutes > 0) {
+                return `${minutes} minute${minutes !== 1 ? 's' : ''} ago`;
+            } else {
+                return 'Just now';
+            }
+        }
+        
+        // Copy additional text
+        function copyAdditionalText() {
+            const text = document.querySelector('.additional-text p').innerText;
+            navigator.clipboard.writeText(text).then(() => {
+                showNotification('Text copied to clipboard!');
+            }).catch(err => {
+                console.error('Failed to copy: ', err);
+                showNotification('Failed to copy text. Please try again.', 'error');
+            });
+        }
+        
+        // Print page
+        function printPage() {
+            window.print();
+        }
+        
+        // Send code
+        function sendCode() {
+            // In a real app, this would open a form to send codes
+            showNotification('Code sending feature will be available soon!');
+        }
+        
+        // Export codes to CSV
+        function exportCodes() {
+            let csv = 'Code,Reward,Category,Source,Status,Expiry Date\n';
+            
+            codes.forEach(code => {
+                csv += `"${code.code}","${code.reward}","${code.category}","${code.source}","${code.status}","${code.expiryDate.toISOString().split('T')[0]}"\n`;
+            });
+            
+            const blob = new Blob([csv], { type: 'text/csv' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'free_fire_codes.csv';
+            a.click();
+            URL.revokeObjectURL(url);
+            
+            showNotification('Codes exported successfully!');
+        }
+        
+        // Import codes from CSV
+        function importCodes(event) {
+            const file = event.target.files[0];
+            if (!file) return;
+            
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                try {
+                    const csv = e.target.result;
+                    const lines = csv.split('\n');
+                    const headers = lines[0].split(',');
+                    
+                    // Skip header row
+                    for (let i = 1; i < lines.length; i++) {
+                        if (!lines[i].trim()) continue;
+                        
+                        const values = lines[i].split(',');
+                        if (values.length < 6) continue;
+                        
+                        // Extract values (removing quotes if present)
+                        const code = values[0].replace(/"/g, '');
+                        const reward = values[1].replace(/"/g, '');
+                        const category = values[2].replace(/"/g, '');
+                        const source = values[3].replace(/"/g, '');
+                        const status = values[4].replace(/"/g, '');
+                        const expiryDate = new Date(values[5].replace(/"/g, ''));
+                        
+                        // Check if code already exists
+                        if (codes.some(c => c.code === code)) continue;
+                        
+                        // Create new code object
+                        const newCode = {
+                            id: codes.length + 1,
+                            code: code,
+                            reward: reward || 'Unknown reward',
+                            category: category || 'other',
+                            source: source || 'Imported',
+                            expiryDate: expiryDate || new Date(Date.now() + 7 * 24 * 60 * 60 * 1000),
+                            addedDate: new Date(),
+                            status: status || 'active',
+                            redeemed: false,
+                            rating: 0,
+                            likes: 0,
+                            dislikes: 0
+                        };
+                        
+                        codes.push(newCode);
+                    }
+                    
+                    filteredCodes = [...codes];
+                    renderCodes();
+                    updateStats();
+                    showNotification('Codes imported successfully!');
+                } catch (error) {
+                    console.error('Error importing CSV:', error);
+                    showNotification('Error importing CSV file. Please check the format.', 'error');
+                }
+            };
+            
+            reader.readAsText(file);
+            
+            // Reset file input
+            event.target.value = '';
+        }
+        
+        // Update statistics
+        function updateStats() {
+            const totalCodes = codes.length;
+            const activeCodes = codes.filter(c => c.status === 'active').length;
+            const expiredCodes = codes.filter(c => c.status === 'expired').length;
+            const favoriteCount = favorites.length;
+            
+            document.getElementById('totalCodes').textContent = totalCodes;
+            document.getElementById('activeCodes').textContent = activeCodes;
+            document.getElementById('expiredCodes').textContent = expiredCodes;
+            document.getElementById('favoriteCount').textContent = favoriteCount;
+        }
+        
+        // Check for new codes
+        function checkForNewCodes() {
+            // In a real app, this would fetch from a server
+            // For demo purposes, we'll simulate new codes occasionally
+            if (Math.random() > 0.7) {
+                showNotification('New codes available! Check the list for updates.', 'warning');
+            }
+        }
+        
+        // Auto-refresh codes
+        function startAutoRefresh() {
+            setInterval(() => {
+                // Simulate checking for new codes
+                checkForNewCodes();
+                
+                // Update expiry status
+                codes.forEach(code => {
+                    if (code.status === 'active' && new Date() > code.expiryDate) {
+                        code.status = 'expired';
+                    }
+                });
+                
+                filteredCodes = [...codes];
+                renderCodes();
+                updateStats();
+            }, 300000); // Every 5 minutes
+        }
+        
+        // Setup keyboard shortcuts
+        function setupKeyboardShortcuts() {
+            document.addEventListener('keydown', function(e) {
+                // Ctrl/Cmd + K to focus search
+                if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
+                    e.preventDefault();
+                    document.getElementById('searchInput').focus();
+                }
+                
+                // Ctrl/Cmd + D to toggle dark mode
+                if ((e.ctrlKey || e.metaKey) && e.key === 'd') {
+                    e.preventDefault();
+                    document.getElementById('darkModeToggle').click();
+                }
+                
+                // Escape to close modals
+                if (e.key === 'Escape') {
+                    document.querySelectorAll('.modal').forEach(modal => {
+                        modal.style.display = 'none';
+                    });
+                }
+            });
+        }
+        
+        // Close modal
+        function closeModal(modalId) {
+            document.getElementById(modalId).style.display = 'none';
+        }
+        
+        // Switch tab
+        function switchTab(tabName) {
+            // Remove active class from all tabs and contents
+            document.querySelectorAll('.tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            document.querySelectorAll('.tab-content').forEach(content => {
+                content.classList.remove('active');
+            });
+            
+            // Add active class to selected tab and content
+            document.querySelector(`.tab:nth-child(${tabName === 'general' ? 1 : tabName === 'notifications' ? 2 : 3})`).classList.add('active');
+            document.getElementById(`${tabName}-tab`).classList.add('active');
+        }
+        
+        // Simulate progress bar
+        function simulateProgress() {
+            const progressBar = document.getElementById('progressBar');
+            let width = 0;
+            
+            const interval = setInterval(() => {
+                width += 10;
+                progressBar.style.width = width + '%';
+                
+                if (width >= 100) {
+                    clearInterval(interval);
+                    setTimeout(() => {
+                        progressBar.style.width = '0%';
+                    }, 1000);
+                }
+            }, 200);
+        }
+        
+        // Simulate progress on page load
+        window.addEventListener('load', () => {
+            simulateProgress();
+        });
+    </script>
+</body>
+</html>
